@@ -1,5 +1,5 @@
 """
-BX3 Backend V2.0 — FastAPI + Pydantic
+BX3 XO — FastAPI + Pydantic
 Contrat JSON strict · Feedback Loop · Brier Score · Auto-pondération
 Famille ETOH · Déploiement Render.com (gratuit)
 """
