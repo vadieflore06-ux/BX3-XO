@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bx3-backend-omega
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APIFOOTBALL_KEY
+        value: 5a9b57e9506b5c0bba3089a18dd309da
+      - key: ODDS_API_KEY
+        value: 4865be3ee6aa31308d05ab9e90022cc481f6f4853eebd254ce25497c31898fa1
+      - key: FOOTBALLDATA_KEY
+        value: 5f3849cc0b314ac29ee6613efc24bf10
+      - key: SPORTMONKS_KEY
+        value: 0tS9UyNiMOv0JDXMCRFmMLo1IFc8Sv62XjZAOuHJhky53mFBVx44Z2l4DLPv
+      - key: BX3_SECRET
+        value: BX3FamilleEtoh2026SecretKey
+    plan: free
+    region: frankfurt
