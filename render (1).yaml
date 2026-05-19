@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bx3-xo
+    name: BX3 Backend V2.0
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
