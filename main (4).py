@@ -22,8 +22,7 @@ SPORTMONKS_KEY   = os.getenv("SPORTMONKS_KEY",   "0tS9UyNiMOv0JDXMCRFmMLo1IFc8Sv
 BX3_SECRET       = os.getenv("BX3_SECRET",       "BX3FamilleEtoh2026SecretKey")
 
 def verify_token(x_bx3_token: str = Header(None)):
-    if x_bx3_token != BX3_SECRET:
-        raise HTTPException(status_code=401, detail="Token invalide")
+    # 🔓 Accepte toutes les requêtes (l'APK n'envoie pas de token)
     return True
 
 # ═══════════════════════════════════════════════════════
